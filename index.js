@@ -7,7 +7,7 @@ const model = require('./models/index')
 const pessoas = require('./routes/pessoas')
 
 app = express()
-
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/pessoas', pessoas)
 
