@@ -17,10 +17,12 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-app.listen(port, (err) => {
-    if(err) {
-        console.log('Não conectado')
-    } else {
-        console.log('Conectado na porta: ' + port)
-    }
+model.sequelize.sync().then(() => {
+    app.listen(port, (err) => {
+        if(err) {
+            console.log('Não conectado')
+        } else {
+            console.log('Conectado na porta: ' + port)
+        }
+    })
 })
