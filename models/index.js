@@ -19,6 +19,12 @@ fs.readdirSync(__dirname)
       }
     });
 
+    Object.keys(models).forEach( modelName => {
+        if('associate' in models[modelName]){
+            models[modelName].associate(models)
+        }
+    })
+    
 //const Pessoa = require('./pessoas.js')(sequelize, Sequelize); 
 //const Usuario = require('./usuario.js')(sequelize, Sequelize); 
 
