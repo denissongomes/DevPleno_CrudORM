@@ -1,6 +1,8 @@
-const model = require('./models/index')
-const index = (req, res) => {
-res.send('Olá Mundo')
+const model = require('../models/index')
+
+const index = async(req, res) => {
+    const pessoas = await model.models.pessoa.findAll()
+    res.send(pessoas)
 }
 
 module.exports = {
