@@ -4,10 +4,6 @@ const sequelize = new Sequelize('cadastro-orm', 'root','', {
     host: '127.0.0.1'
 } )
 
-const Pessoa = sequelize.define('Pessoa', {
-    nome: Sequelize.STRING,
-    cargo: Sequelize.STRING,
-    nascimento: Sequelize.DATE
-})
+
 
 sequelize.sync().then(() => console.log('synced'))
