@@ -1,5 +1,5 @@
-const index = async(dependencies, req, res) => {
-    const pessoas = await dependencies.pessoa.findAll()
+const index = async({ pessoa }, req, res) => {
+    const pessoas = await pessoa.findAll()
     res.send(pessoas)
 }
 
