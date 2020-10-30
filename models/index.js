@@ -4,4 +4,8 @@ const sequelize = new Sequelize('cadastro-orm', 'root','', {
     host: '127.0.0.1'
 } )
 
-sequelize.authenticate(() => console.log('auth'))
+const Pessoa = sequelize.define('Pessoa', {
+    nome: Sequelize.STRING,
+    cargo: Sequelize.STRING,
+    nascimento: Sequelize.DATE
+})
