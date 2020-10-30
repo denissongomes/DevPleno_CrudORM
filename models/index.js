@@ -8,5 +8,7 @@ const pessoa = require('./pessoas.js')(sequelize, Sequelize);
 
 module.exports = {
     sequelize,
-    models: pessoa 
+    models: { 
+        pessoa 
+    }
 }
