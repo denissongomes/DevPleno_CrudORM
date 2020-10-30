@@ -4,6 +4,9 @@ const sequelize = new Sequelize('cadastro-orm', 'root','', {
     host: '127.0.0.1'
 } )
 
-const Pessoa = require('./pessoas.js')(sequelize, Sequelize); 
+const pessoa = require('./pessoas.js')(sequelize, Sequelize); 
 
-module.exports = sequelize
+module.exports = {
+    sequelize,
+    models: pessoa 
+}
