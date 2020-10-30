@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/denissongomes/DevPleno_CrudORM/issues"
   },
-  "homepage": "https://github.com/denissongomes/DevPleno_CrudORM#readme"
+  "homepage": "https://github.com/denissongomes/DevPleno_CrudORM#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
 }
