@@ -1,8 +1,8 @@
-const PessoaModel = (sequelize) => {
+const PessoaModel = (sequelize, DataTypes) => {
     const Pessoa = sequelize.define('Pessoa', {
-        nome: Sequelize.STRING,
-        cargo: Sequelize.STRING,
-        nascimento: Sequelize.DATE
+        nome: DataTypes.STRING,
+        cargo: DataTypes.STRING,
+        nascimento: DataTypes.DATE
     })
     return Pessoa
 }
