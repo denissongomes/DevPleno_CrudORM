@@ -1,7 +1,5 @@
-const model = require('../models/index')
-
-const index = async(req, res) => {
-    const pessoas = await model.models.pessoa.findAll()
+const index = async(dependencies, req, res) => {
+    const pessoas = await dependencies.pessoa.findAll()
     res.send(pessoas)
 }
 
