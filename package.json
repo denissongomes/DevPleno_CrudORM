@@ -1,0 +1,23 @@
+{
+  "name": "devpleno_crud_orm",
+  "version": "1.0.0",
+  "description": "Projeto CRUD ORM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denissongomes/DevPleno_CrudORM.git"
+  },
+  "keywords": [
+    "crud",
+    "orm"
+  ],
+  "author": "Denisson Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denissongomes/DevPleno_CrudORM/issues"
+  },
+  "homepage": "https://github.com/denissongomes/DevPleno_CrudORM#readme"
+}
