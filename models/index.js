@@ -9,3 +9,5 @@ const Pessoa = sequelize.define('Pessoa', {
     cargo: Sequelize.STRING,
     nascimento: Sequelize.DATE
 })
+
+sequelize.sync().then(() => console.log('synced'))
