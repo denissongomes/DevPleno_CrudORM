@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path')
 const port = process.env.Port || 3000
 
+const pessoas = require('./routes/pessoas')
+
 app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))
