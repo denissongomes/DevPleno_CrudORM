@@ -12,6 +12,10 @@ app.use('/pessoas', pessoas)
 app.set('views',path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
+app.get('/', (req, res) => {
+    res.render('home')
+})
+
 app.listen(port, (err) => {
     if(err) {
         console.log('Não conectado')
