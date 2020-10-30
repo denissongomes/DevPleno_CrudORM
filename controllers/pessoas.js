@@ -12,8 +12,19 @@ const createProcess = async({Pessoa}, req, res) => {
     res.redirect('/pessoas')
 }
 
+const deleteOne = async({Pessoa}, req, res) => {
+    await Pessoa.destroy({
+        where: { 
+            id: req.params.id
+         }
+    })
+    res.redirect('/pessoas')
+}
+
 module.exports = {
     index,
     createProcess,
-    createForm
+    createForm,
+    deleteOne,
+   
 } 
