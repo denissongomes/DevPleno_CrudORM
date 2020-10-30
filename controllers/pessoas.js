@@ -1,6 +1,6 @@
 const index = async({ Pessoa }, req, res) => {
     const pessoas = await Pessoa.findAll()
-    res.send(pessoas)
+    res.render('pessoas/index', { pessoas })
 }
 
 const createForm = (req,res) => {
