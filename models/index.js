@@ -16,11 +16,11 @@ const sequelize = new Sequelize('cadastro-orm', 'root','', {
 //         models[models.name] = model(sequelize, Sequelize)
 //         //
 //     });
-const pessoa = require('./pessoas.js')(sequelize, Sequelize); 
+const Pessoa = require('./pessoas.js')(sequelize, Sequelize); 
 
 module.exports = {
     sequelize,
     models: { 
-        pessoa 
+        Pessoa 
     }
 }
