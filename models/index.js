@@ -5,5 +5,3 @@ const sequelize = new Sequelize('cadastro-orm', 'root','', {
 } )
 
 const Pessoa = require('./pessoas.js')(sequelize, Sequelize); 
-
-sequelize.sync().then(() => console.log('synced'))
